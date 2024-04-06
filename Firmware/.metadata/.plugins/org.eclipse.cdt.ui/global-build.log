@@ -1,0 +1,357 @@
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/OLEDscreen/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/OLEDscreen
+Error: build command 'cmake' not found
+Building in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/build
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/coverity_analysis/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/coverity_analysis
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp32-lora-library/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp32-lora-library
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/source/dependency/3rdparty/llhttp/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/source/dependency/3rdparty/llhttp
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/main/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/main
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/mbedtls_integration/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/mbedtls_integration
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_mbedtls_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_mbedtls_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_utils_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_utils_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish/main/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish/main
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow/main/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow/main
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/OLEDscreen/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/OLEDscreen
+Error: build command 'cmake' not found
+Building in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/build
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/coverity_analysis/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/coverity_analysis
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp32-lora-library/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp32-lora-library
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/source/dependency/3rdparty/llhttp/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/source/dependency/3rdparty/llhttp
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/main/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/main
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/mbedtls_integration/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/mbedtls_integration
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_mbedtls_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_mbedtls_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_utils_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_utils_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish/main/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish/main
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow/main/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow/main
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Defender-for-AWS-IoT-embedded-sdk/Device-Defender-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Device-Shadow-for-AWS-IoT-embedded-sdk/Device-Shadow-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/Fleet-Provisioning-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/Jobs-for-AWS-IoT-embedded-sdk/Jobs-for-AWS-IoT-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/OLEDscreen/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/OLEDscreen
+Error: build command 'cmake' not found
+Building in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/build
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/backoffAlgorithm/backoffAlgorithm/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT/coreMQTT/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/coverity_analysis/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/coverity_analysis
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreMQTT-Agent/coreMQTT-Agent/source/dependency/coreMQTT/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp32-lora-library/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp32-lora-library
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/source/dependency/3rdparty/llhttp/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/source/dependency/3rdparty/llhttp
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/main/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/main
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/mbedtls_integration/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/mbedtls_integration
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/ota-for-aws-iot-embedded-sdk/ota-for-aws-iot-embedded-sdk/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_mbedtls_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_mbedtls_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_utils_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/pkcs11_utils_utest
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish/main/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/subscribe_publish/main
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreJSON/coreJSON/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow/main/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/examples/thing_shadow/main
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test/unit-test/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/coreHTTP/coreHTTP/test/unit-test
+Error: build command 'cmake' not found
+Configuring in: /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest/build/default
+cmake -G Unix Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /Users/danialbozorgtar/Documents/GitHub/SoilMonitoringSystemCapstone/Firmware/Soil_Monitor_Pro_Hub_ESP32/components/esp-aws-iot/libraries/corePKCS11/corePKCS11/test/wrapper_utest
+Error: build command 'cmake' not found

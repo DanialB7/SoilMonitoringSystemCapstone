@@ -1,0 +1,1447 @@
+!SESSION 2024-04-06 15:50:16.660 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_CA
+Framework arguments:  -keyring /Users/danialbozorgtar/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -keyring /Users/danialbozorgtar/.eclipse_keyring
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-06 15:50:24.974
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-06 15:50:24.974
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-06 15:50:24.974
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-06 15:50:24.975
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:50:25.279
+!MESSAGE Initializing toolchain...
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:50:25.279
+!MESSAGE idf_tools.py path: null/tools/idf_tools.py
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:50:25.279
+!MESSAGE idf_tools.py path doesn't exist
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:50:25.279
+!MESSAGE [/usr/bin:/bin:/usr/sbin:/sbin]
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:50:25.339
+!MESSAGE Eclipse Install location::file:/Applications/Espressif-IDE.app/Contents/Eclipse/
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:50:25.339
+!MESSAGE esp-idf.json file doesnt exist at this location: /Applications/Espressif-IDE.app/Contents/Eclipse/
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:41.404
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:555)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:204)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:41.495
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:555)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:204)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:41.531
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1149)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:555)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:204)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.022
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.023
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.024
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.024
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.025
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.025
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.026
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.026
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.027
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.028
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.028
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.028
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.029
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.029
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.030
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.031
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.031
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.031
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.031
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.031
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.031
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.031
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.032
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.032
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.032
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.032
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.032
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.032
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.032
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.033
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.033
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.033
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.033
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.033
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.espressif.idf.core 4 0 2024-04-06 15:50:43.033
+!MESSAGE No value present
+!STACK 0
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.getESPToolChain(RecheckConfigsHelper.java:78)
+	at com.espressif.idf.core.util.RecheckConfigsHelper.revalidateToolchain(RecheckConfigsHelper.java:46)
+	at com.espressif.idf.core.resources.ResourceChangeListener$1.visit(ResourceChangeListener.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at com.espressif.idf.core.resources.ResourceChangeListener.resourceChanged(ResourceChangeListener.java:41)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:43.458
+!MESSAGE Indexed 'Fleet-Provisioning-for-AWS-IoT-embedded-sdk_test' (3 sources, 1 headers) in 0.159 sec: 218 declarations; 829 references; 8 unresolved inclusions; 0 syntax errors; 272 unresolved names (21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:43.546
+!MESSAGE Indexed 'mbedtls_integration' (1 sources, 2 headers) in 0.088 sec: 400 declarations; 1,883 references; 17 unresolved inclusions; 1 syntax errors; 1,174 unresolved names (34%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:43.921
+!MESSAGE Indexed 'ota-for-aws-iot-embedded-sdk_test' (127 sources, 4 headers) in 0.372 sec: 2,238 declarations; 5,725 references; 235 unresolved inclusions; 0 syntax errors; 3,980 unresolved names (33%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.111
+!MESSAGE Indexed 'corePKCS11_test' (38 sources, 11 headers) in 0.189 sec: 2,576 declarations; 8,777 references; 180 unresolved inclusions; 10 syntax errors; 5,434 unresolved names (32%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.120
+!MESSAGE Indexed 'Device-Defender-for-AWS-IoT-embedded-sdk_test_unit-test' (1 sources, 0 headers) in 0.008 sec: 144 declarations; 791 references; 3 unresolved inclusions; 0 syntax errors; 162 unresolved names (15%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.246
+!MESSAGE Indexed 'dependency_coreMQTT_test' (31 sources, 8 headers) in 0.125 sec: 1,793 declarations; 9,954 references; 47 unresolved inclusions; 0 syntax errors; 4,406 unresolved names (27%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.289
+!MESSAGE Indexed 'pkcs11_mbedtls_utest' (1 sources, 0 headers) in 0.042 sec: 1,296 declarations; 5,607 references; 24 unresolved inclusions; 5 syntax errors; 3,255 unresolved names (32%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.296
+!MESSAGE Indexed 'wrapper_utest' (1 sources, 0 headers) in 0.006 sec: 169 declarations; 400 references; 8 unresolved inclusions; 0 syntax errors; 330 unresolved names (37%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.297
+!MESSAGE Indexed 'coverity_analysis' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.302
+!MESSAGE Indexed 'subscribe_publish_main' (1 sources, 0 headers) in 0.005 sec: 42 declarations; 215 references; 22 unresolved inclusions; 2 syntax errors; 114 unresolved names (31%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.586
+!MESSAGE Indexed 'llhttp' (3 sources, 1 headers) in 0.284 sec: 1,385 declarations; 6,103 references; 9 unresolved inclusions; 0 syntax errors; 200 unresolved names (2.6%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.630
+!MESSAGE Indexed 'ota-for-aws-iot-embedded-sdk_test_unit-test' (5 sources, 2 headers) in 0.043 sec: 754 declarations; 3,435 references; 34 unresolved inclusions; 0 syntax errors; 1,951 unresolved names (32%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.636
+!MESSAGE Indexed 'backoffAlgorithm_test_unit-test' (1 sources, 1 headers) in 0.004 sec: 57 declarations; 236 references; 8 unresolved inclusions; 0 syntax errors; 54 unresolved names (16%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.669
+!MESSAGE Indexed 'Jobs-for-AWS-IoT-embedded-sdk_test' (11 sources, 2 headers) in 0.033 sec: 221 declarations; 2,393 references; 15 unresolved inclusions; 64 syntax errors; 541 unresolved names (17%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.674
+!MESSAGE Indexed 'thing_shadow' (1 sources, 0 headers) in 0.004 sec: 44 declarations; 234 references; 23 unresolved inclusions; 2 syntax errors; 114 unresolved names (29%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.741
+!MESSAGE Indexed 'coreJSON_test' (23 sources, 3 headers) in 0.065 sec: 753 declarations; 6,424 references; 23 unresolved inclusions; 0 syntax errors; 969 unresolved names (12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.745
+!MESSAGE Indexed 'subscribe_publish' (1 sources, 0 headers) in 0.004 sec: 42 declarations; 215 references; 22 unresolved inclusions; 2 syntax errors; 114 unresolved names (31%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:44.790
+!MESSAGE Indexed 'main' (12 sources, 12 headers) in 0.044 sec: 505 declarations; 1,331 references; 78 unresolved inclusions; 1 syntax errors; 467 unresolved names (20%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:46.506
+!MESSAGE Indexed 'esp-aws-iot' (432 sources, 163 headers) in 1.71 sec: 26,196 declarations; 129,481 references; 765 unresolved inclusions; 285 syntax errors; 14,115 unresolved names (8.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:46.556
+!MESSAGE Indexed 'dependency_coreMQTT_test_unit-test' (3 sources, 3 headers) in 0.049 sec: 1,572 declarations; 9,355 references; 16 unresolved inclusions; 0 syntax errors; 4,032 unresolved names (27%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:46.574
+!MESSAGE Indexed 'OLEDscreen' (3 sources, 2 headers) in 0.018 sec: 507 declarations; 1,788 references; 16 unresolved inclusions; 0 syntax errors; 288 unresolved names (11%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:46.598
+!MESSAGE Indexed 'unit-test' (2 sources, 1 headers) in 0.023 sec: 402 declarations; 3,125 references; 12 unresolved inclusions; 45 syntax errors; 1,057 unresolved names (23%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:46.687
+!MESSAGE Indexed 'coreMQTT_test' (31 sources, 8 headers) in 0.088 sec: 1,862 declarations; 10,281 references; 47 unresolved inclusions; 0 syntax errors; 4,535 unresolved names (27%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:50.512
+!MESSAGE Indexed 'Soil_Monitor_Pro_Hub_ESP32' (1,297 sources, 360 headers) in 3.81 sec: 83,250 declarations; 330,061 references; 6,582 unresolved inclusions; 1,826 syntax errors; 93,690 unresolved names (18%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:50.641
+!MESSAGE Indexed 'Fleet-Provisioning-for-AWS-IoT-embedded-sdk_test_unit-test' (1 sources, 0 headers) in 0.129 sec: 206 declarations; 794 references; 3 unresolved inclusions; 0 syntax errors; 262 unresolved names (21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:50.738
+!MESSAGE Indexed 'Device-Defender-for-AWS-IoT-embedded-sdk_test' (3 sources, 1 headers) in 0.096 sec: 157 declarations; 833 references; 6 unresolved inclusions; 0 syntax errors; 172 unresolved names (15%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:50.756
+!MESSAGE Indexed 'thing_shadow_main' (1 sources, 0 headers) in 0.016 sec: 44 declarations; 234 references; 23 unresolved inclusions; 2 syntax errors; 114 unresolved names (29%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:50.766
+!MESSAGE Indexed 'backoffAlgorithm_test' (1 sources, 1 headers) in 0.009 sec: 57 declarations; 236 references; 8 unresolved inclusions; 0 syntax errors; 54 unresolved names (16%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:50.840
+!MESSAGE Indexed 'Jobs-for-AWS-IoT-embedded-sdk_test_unit-test' (1 sources, 1 headers) in 0.073 sec: 138 declarations; 2,051 references; 7 unresolved inclusions; 64 syntax errors; 427 unresolved names (16%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:51.661
+!MESSAGE Indexed 'test' (27 sources, 6 headers) in 0.818 sec: 664 declarations; 3,759 references; 57 unresolved inclusions; 45 syntax errors; 1,507 unresolved names (25%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:51.670
+!MESSAGE Indexed 'Device-Shadow-for-AWS-IoT-embedded-sdk_test_unit-test' (1 sources, 0 headers) in 0.008 sec: 80 declarations; 1,108 references; 4 unresolved inclusions; 0 syntax errors; 249 unresolved names (17%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:51.870
+!MESSAGE Indexed 'pkcs11_utils_utest' (1 sources, 0 headers) in 0.199 sec: 62 declarations; 106 references; 4 unresolved inclusions; 0 syntax errors; 43 unresolved names (20%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:52.271
+!MESSAGE Indexed 'coreMQTT_test_unit-test' (3 sources, 3 headers) in 0.4 sec: 1,641 declarations; 9,682 references; 16 unresolved inclusions; 0 syntax errors; 4,161 unresolved names (27%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:53.586
+!MESSAGE Indexed 'coreMQTT-Agent_test' (30 sources, 10 headers) in 1.31 sec: 746 declarations; 2,407 references; 56 unresolved inclusions; 2 syntax errors; 1,707 unresolved names (35%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:53.721
+!MESSAGE Indexed 'esp32-lora-library' (1 sources, 1 headers) in 0.134 sec: 146 declarations; 258 references; 9 unresolved inclusions; 0 syntax errors; 44 unresolved names (9.8%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:53.770
+!MESSAGE Indexed 'coreMQTT-Agent_test_unit-test' (2 sources, 3 headers) in 0.048 sec: 470 declarations; 1,755 references; 17 unresolved inclusions; 2 syntax errors; 1,187 unresolved names (35%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:53.794
+!MESSAGE Indexed 'test_unit-test' (1 sources, 1 headers) in 0.023 sec: 593 declarations; 5,999 references; 10 unresolved inclusions; 0 syntax errors; 748 unresolved names (10%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:50:53.887
+!MESSAGE Indexed 'Device-Shadow-for-AWS-IoT-embedded-sdk_test' (4 sources, 1 headers) in 0.092 sec: 103 declarations; 1,179 references; 11 unresolved inclusions; 0 syntax errors; 263 unresolved names (17%)
+
+!ENTRY com.espressif.idf.sdk.config.ui 4 0 2024-04-06 15:51:16.266
+!MESSAGE File Not found:null/tools/idf.py
+!STACK 0
+java.lang.reflect.InvocationTargetException: File Not found:null/tools/idf.py
+	at com.espressif.idf.sdk.config.ui.SDKConfigurationEditor.lambda$0(SDKConfigurationEditor.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.FileNotFoundException: File Not found:null/tools/idf.py
+	at com.espressif.idf.sdk.config.core.server.JsonConfigServer.start(JsonConfigServer.java:103)
+	at com.espressif.idf.sdk.config.core.server.ConfigServerManager.getServer(ConfigServerManager.java:49)
+	at com.espressif.idf.sdk.config.ui.SDKConfigurationEditor.initConfigServer(SDKConfigurationEditor.java:373)
+	at com.espressif.idf.sdk.config.ui.SDKConfigurationEditor.lambda$0(SDKConfigurationEditor.java:170)
+	... 1 more
+Root exception:
+java.io.FileNotFoundException: File Not found:null/tools/idf.py
+	at com.espressif.idf.sdk.config.core.server.JsonConfigServer.start(JsonConfigServer.java:103)
+	at com.espressif.idf.sdk.config.core.server.ConfigServerManager.getServer(ConfigServerManager.java:49)
+	at com.espressif.idf.sdk.config.ui.SDKConfigurationEditor.initConfigServer(SDKConfigurationEditor.java:373)
+	at com.espressif.idf.sdk.config.ui.SDKConfigurationEditor.lambda$0(SDKConfigurationEditor.java:170)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:53:33.667
+!MESSAGE IDF_PATH is not found to auto-configure the toolchains.
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-06 15:53:37.081
+!MESSAGE Indexed 'Soil_Monitor_Pro_Hub_ESP32' (1,297 sources, 360 headers) in 3.35 sec: 83,250 declarations; 330,061 references; 6,582 unresolved inclusions; 1,826 syntax errors; 93,690 unresolved names (18%)
+
+!ENTRY org.eclipse.core.resources 4 2 2024-04-06 15:53:38.462
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Building Soil_Monitor_Pro_Hub_ESP32
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:357)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	... 15 more
+!SUBENTRY 1 com.espressif.idf.core 4 0 2024-04-06 15:53:38.462
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.espressif.idf.core 4 0 2024-04-06 15:53:38.462
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2024-04-06 15:53:38.506
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2024-04-06 15:53:38.506
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Soil_Monitor_Pro_Hub_ESP32'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Building Soil_Monitor_Pro_Hub_ESP32
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:357)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	... 15 more
+!SUBENTRY 2 com.espressif.idf.core 4 0 2024-04-06 15:53:38.506
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.espressif.idf.core 4 0 2024-04-06 15:53:38.506
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2024-04-06 15:53:52.126
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Building Soil_Monitor_Pro_Hub_ESP32
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:357)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	... 15 more
+!SUBENTRY 1 com.espressif.idf.core 4 0 2024-04-06 15:53:52.126
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.espressif.idf.core 4 0 2024-04-06 15:53:52.126
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2024-04-06 15:53:52.149
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2024-04-06 15:53:52.149
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Soil_Monitor_Pro_Hub_ESP32'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Building Soil_Monitor_Pro_Hub_ESP32
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:357)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	... 15 more
+!SUBENTRY 2 com.espressif.idf.core 4 0 2024-04-06 15:53:52.149
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.espressif.idf.core 4 0 2024-04-06 15:53:52.149
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-04-06 15:54:20.884 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_CA
+Framework arguments:  -keyring /Users/danialbozorgtar/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -keyring /Users/danialbozorgtar/.eclipse_keyring
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-06 15:54:26.717
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-06 15:54:26.718
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-06 15:54:26.718
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-06 15:54:26.719
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:54:27.083
+!MESSAGE Initializing toolchain...
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:54:27.084
+!MESSAGE idf_tools.py path: null/tools/idf_tools.py
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:54:27.084
+!MESSAGE idf_tools.py path doesn't exist
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:54:27.084
+!MESSAGE [/usr/bin:/bin:/usr/sbin:/sbin]
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:54:27.145
+!MESSAGE Eclipse Install location::file:/Applications/Espressif-IDE.app/Contents/Eclipse/
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:54:27.145
+!MESSAGE esp-idf.json file doesnt exist at this location: /Applications/Espressif-IDE.app/Contents/Eclipse/
+
+!ENTRY com.espressif.idf.core 1 0 2024-04-06 15:54:29.210
+!MESSAGE IDF_PATH is not found to auto-configure the toolchains.
+
+!ENTRY org.eclipse.core.resources 4 2 2024-04-06 15:54:32.460
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Building Soil_Monitor_Pro_Hub_ESP32
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:357)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	... 15 more
+!SUBENTRY 1 com.espressif.idf.core 4 0 2024-04-06 15:54:32.461
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.espressif.idf.core 4 0 2024-04-06 15:54:32.461
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2024-04-06 15:54:32.504
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2024-04-06 15:54:32.504
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Soil_Monitor_Pro_Hub_ESP32'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Building Soil_Monitor_Pro_Hub_ESP32
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:357)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	... 15 more
+!SUBENTRY 2 com.espressif.idf.core 4 0 2024-04-06 15:54:32.504
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.espressif.idf.core 4 0 2024-04-06 15:54:32.504
+!MESSAGE Building Soil_Monitor_Pro_Hub_ESP32
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "configuration" is null
+	at com.espressif.idf.core.util.DfuCommandsUtil.isDfu(DfuCommandsUtil.java:52)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.runCmakeBuildCommand(IDFBuildConfiguration.java:411)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.build(IDFBuildConfiguration.java:348)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
