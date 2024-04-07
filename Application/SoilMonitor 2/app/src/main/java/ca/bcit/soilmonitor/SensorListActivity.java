@@ -58,5 +58,6 @@ public class SensorListActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
