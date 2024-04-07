@@ -11,6 +11,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -24,10 +25,11 @@ public class SensorDetailActivity extends AppCompatActivity {
     private ListView dataList;
     private ArrayAdapter<String> adapter;
     private List<String> sensorDataList = new ArrayList<>();
-    private DatabaseReference sensorDataRef;
+    //private DatabaseReference sensorDataRef;
     private DatabaseReference sensorControlRef;
     private Button scheduleButton;
     private String sensorName;
+    private Query sensorDataRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,7 @@ public class SensorDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sensor_detail);
 
         sensorName = getIntent().getStringExtra("SENSOR_NAME");
-        sensorDataRef = FirebaseDatabase.getInstance().getReference(sensorName + "/Data");
+        sensorDataRef = FirebaseDatabase.getInstance().getReference(sensorName + "/Data").orderByKey().limitToLast(25);
         sensorControlRef = FirebaseDatabase.getInstance().getReference(sensorName + "/Control");
 
         dataList = findViewById(R.id.detailsListView);
@@ -60,15 +62,22 @@ public class SensorDetailActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 sensorDataList.clear();
+                ArrayList<String> reversedList = new ArrayList<>();
                 for (DataSnapshot timestampSnapshot : dataSnapshot.getChildren()) {
                     String timestamp = timestampSnapshot.getKey();
                     String humidity = String.valueOf(timestampSnapshot.child("humidity").getValue());
                     String temperature = String.valueOf(timestampSnapshot.child("temperature").getValue());
                     String lux = String.valueOf(timestampSnapshot.child("lux").getValue());
-                    String formattedData = String.format("Timestamp: %s\nTemperature: %s°C\nHumidity: %s%%\nLux: %s",
-                            timestamp, temperature, humidity, lux);
-                    sensorDataList.add(formattedData);
+                    String formattedData = String.format("Timestamp: %s\nTemperature: %s°C\nHumidity: %s%%\nLux: %s", timestamp, temperature, humidity, lux);
+
+                    // Add the formatted string to the start of the reversed list
+                    reversedList.add(0, formattedData);
                 }
+
+                // Assign the reversed list to the sensorDataList
+                sensorDataList.addAll(reversedList);
+
+                // Notify the adapter that the data has changed
                 adapter.notifyDataSetChanged();
             }
 
@@ -78,6 +87,7 @@ public class SensorDetailActivity extends AppCompatActivity {
             }
         });
     }
+
 
     private void setWaterOn(boolean waterState) {
         sensorControlRef.child("waterOn").setValue(waterState);
