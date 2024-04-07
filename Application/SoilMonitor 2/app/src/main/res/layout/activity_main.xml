@@ -2,13 +2,12 @@
 
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
         android:layout_gravity="center_horizontal"
         android:background="@color/white">
@@ -300,13 +299,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <Button
+                android:id="@+id/seeAllDevicesBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="See all devices"
-                android:textColor="@color/green_leaf"
+                android:background="@color/white"
                 android:paddingLeft="20dp"
-                android:id="@+id/seeAllDevicesBtn"/>
+                android:text="See all devices"
+                app:backgroundTint="@null"
+                android:textColor="@color/green_leaf" />
 
             <TextView
                 android:layout_width="match_parent"

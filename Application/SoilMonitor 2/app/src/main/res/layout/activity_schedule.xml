@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:amPmTextColor="@color/green_leaf"
+        android:background="@color/white"
+        android:headerAmPmTextAppearance="@color/green_leaf"
+        android:headerBackground="@color/white"
+        android:numbersBackgroundColor="@null"
+        android:numbersSelectorColor="@color/green_leaf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/waterToggleButton"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextReadingInterval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:hint="Set reading interval"/>
+
+    </LinearLayout>
+    <ToggleButton
+        android:id="@+id/waterToggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="Water Off"
+        android:textOn="Water On"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/green_leaf"
+        android:background="@null"
+        android:layout_marginBottom="64dp"/>
+
+    <Button
+        android:id="@+id/setScheduleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Schedule"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/green_leaf"
+        android:background="@color/white"
+        app:backgroundTint="@null"/>
+
+</RelativeLayout>
+

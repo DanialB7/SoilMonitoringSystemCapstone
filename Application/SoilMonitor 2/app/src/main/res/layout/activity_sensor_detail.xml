@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Button
-        android:id="@+id/waterOnButton"
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/detailsListView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Turn Water On" />
+        android:layout_above="@+id/waterControlLayout"/>
 
-    <Button
-        android:id="@+id/waterOffButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/waterControlLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Turn Water Off"
-        android:layout_below="@id/waterOnButton" />
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
 
-    <!-- Additional layout components -->
+        <Button
+            android:id="@+id/scheduleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Schedule"
+            android:textColor="@color/green_leaf"
+            android:background="@color/white"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
+
