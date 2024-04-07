@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         luxRead = findViewById(R.id.textViewLux);
         timeStamp = findViewById(R.id.textViewTimeStamp);
         database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("Data");
+        myRef = database.getReference("Sensor 1/Data");
         Button seeAllDevicesBtn = findViewById(R.id.seeAllDevicesBtn);
 
         seeAllDevicesBtn.setOnClickListener(new View.OnClickListener() {
@@ -86,17 +86,17 @@ public class MainActivity extends AppCompatActivity {
 
         mpLineChart = findViewById(R.id.graph);
 
-        LineDataSet lineDataSet2 = new LineDataSet(dataValues2(), "Humidity");
-        ArrayList<ILineDataSet> dataSets = new ArrayList<>();
-        dataSets.add(lineDataSet2);
-        LineData data = new LineData(dataSets);
-        mpLineChart.setData(data);
-        mpLineChart.invalidate();
-        configureMPChart();
-        configureDataset(lineDataSet2, mapColor.get("blue"), mapColor.get("brown"));
+        //LineDataSet lineDataSet2 = new LineDataSet(dataValues2(), "Humidity");
+        //ArrayList<ILineDataSet> dataSets = new ArrayList<>();
+        //dataSets.add(lineDataSet2);
+        //ineData data = new LineData(dataSets);
+        //mpLineChart.setData(data);
+        //mpLineChart.invalidate();
+        //configureMPChart();
+        //configureDataset(lineDataSet2, mapColor.get("blue"), mapColor.get("brown"));
 
-
-        retrieveData();
+        updateData();
+        //retrieveData();
     }
     
     private void configureMPChart() {
@@ -144,37 +144,18 @@ public class MainActivity extends AppCompatActivity {
         data.setMode(LineDataSet.Mode.CUBIC_BEZIER);
 
     }
-
-
-
-    private ArrayList<Entry> dataValues2(){
-        ArrayList<Entry> dataVals = new ArrayList<Entry>();
-        dataVals.add(new Entry(0, 12));
-        dataVals.add(new Entry(5, 14));
-        dataVals.add(new Entry(15, 16));
-        dataVals.add(new Entry(25, 18));
-        dataVals.add(new Entry(35, 20));
-        dataVals.add(new Entry(45, 22));
-        dataVals.add(new Entry(55, 24));
-        return dataVals;
-    }
-
-    private ArrayList<Entry> dataVals = new ArrayList<>();
-    private void retrieveData() {
-        Query myTopData = myRef.orderByKey().limitToLast(20);
-        myTopData.addChildEventListener(new ChildEventListener() {
+    private void updateData() {
+        myRef.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
             @Override
-            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String previousChildName) {
-                String timestamp = dataSnapshot.getKey();
-                myRef.limitToLast(20).addValueEventListener(new ValueEventListener() {
+            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                String timeKey = snapshot.getKey();
+                myRef.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        Long epochTime = snapshot.child(timestamp+"/timeStamp").getValue(Long.class);
-                        Float temp = snapshot.child(timestamp+"/temperature").getValue(Float.class);
-                        Double humid = snapshot.child(timestamp+"/humidity").getValue(Double.class);
-                        Double lux = snapshot.child(timestamp+"/lux").getValue(Double.class);
-
+                        Long epochTime = snapshot.child(timeKey+"/timeStamp").getValue(Long.class);
+                        Float temp = snapshot.child(timeKey+"/temperature").getValue(Float.class);
+                        Double humid = snapshot.child(timeKey+"/humidity").getValue(Double.class);
+                        Double lux = snapshot.child(timeKey+"/lux").getValue(Double.class);
                         if(temp!= null & humid != null && lux != null & epochTime != null){
                             String tempFormat = "Temperature: " + String.format("%.1f", temp) + " C";
                             String humidFormat = "Humidity: " + String.format("%.1f", humid) + "%";
@@ -185,55 +166,38 @@ public class MainActivity extends AppCompatActivity {
                             humidRead.setText(humidFormat);
                             luxRead.setText(luxFormat);
                             timeStamp.setText(localDateTime);
-                            long timeStampRef = 1711239394837L;
-                            int timeXaxis = Integer.parseInt(epochFormat);
-                            // Add data to your ArrayLists for plotting
-                            dataVals.add(new Entry((epochTime - timeStampRef), temp));  // Assuming temp is the y-axis data
-                            showChart(dataVals, "testing");
                         }
-
                     }
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
+
                     }
                 });
             }
-
+            //to be added in the future
             @Override
             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
             }
-
             @Override
             public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
             }
-
             @Override
             public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
-
     }
-
-
 
     private String convertEpochToLocalDateTime(long epochTime){
         Instant instant = Instant.ofEpochMilli(epochTime);
         ZoneId zoneId = ZoneId.systemDefault(); //Use system default time zone
         LocalDateTime localDateTime = instant.atZone(zoneId).toLocalDateTime();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("hh:mm:ss");
         String formattedDateTime = localDateTime.format(formatter);
         return formattedDateTime;
-
-
     }
 
 
@@ -249,16 +213,8 @@ public class MainActivity extends AppCompatActivity {
         mpLineChart.invalidate();
         configureDataset(lineDataSet, mapColor.get("greenLeaf"), mapColor.get("brown"));
 
+
+
     }
-
-
-
-
-
-
-
-
-
-
 
 }
