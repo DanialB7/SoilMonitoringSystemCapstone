@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "457261025280",
+    "firebase_url": "https://onlyplants-2a2cd-default-rtdb.firebaseio.com",
+    "project_id": "onlyplants-2a2cd",
+    "storage_bucket": "onlyplants-2a2cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457261025280:android:d178287a2af2cc4da4b0e5",
+        "android_client_info": {
+          "package_name": "ca.bcit.soilmonitor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE1L0qQBHb1D3cihfOtdPGGm8AMveITqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

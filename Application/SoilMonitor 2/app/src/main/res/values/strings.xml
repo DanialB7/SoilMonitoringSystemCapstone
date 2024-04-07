@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Soil Monitor</string>
+    <string name="title_activity_sensor_list">SensorListActivity</string>
+</resources>
