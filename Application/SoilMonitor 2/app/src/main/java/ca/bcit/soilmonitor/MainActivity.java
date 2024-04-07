@@ -212,9 +212,6 @@ public class MainActivity extends AppCompatActivity {
         mpLineChart.setData(lineData);
         mpLineChart.invalidate();
         configureDataset(lineDataSet, mapColor.get("greenLeaf"), mapColor.get("brown"));
-
-
-
     }
 
 }
