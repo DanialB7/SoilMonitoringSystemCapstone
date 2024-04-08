@@ -3,6 +3,7 @@ package ca.bcit.soilmonitor;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -55,7 +56,10 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference sensor1DataRef;
     DatabaseReference sensor1ControlRef;
     ArrayList<Entry> yData;
-
+    CardView tempFilter;
+    CardView humiFilter;
+    CardView luxFilter;
+    CardView soilFilter;
 
 
     @Override
@@ -70,7 +74,10 @@ public class MainActivity extends AppCompatActivity {
         sensor1DataRef = database.getReference("Sensor 1/Data");
         sensor1ControlRef = database.getReference("Sensor 1/Control");
         lineChart = findViewById(R.id.graph);
-
+        tempFilter = findViewById(R.id.cardViewTempFilter);
+        humiFilter = findViewById(R.id.cardViewHumiFilter);
+        luxFilter = findViewById(R.id.cardViewLuxFilter);
+        soilFilter = findViewById(R.id.cardViewSoilFilter);
         Button seeAllDevicesBtn = findViewById(R.id.seeAllDevicesBtn);
 
         seeAllDevicesBtn.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         mapColor.put("greenLeaf", "#7FB241");
         mapColor.put("brown", "#A07E63");
         mapColor.put("blue","#1ecbe1");
+        mapColor.put("yellow","#D2E249");
+
 
         sensor1ControlRef.child("Schedule").addValueEventListener(new ValueEventListener() {
             @Override
@@ -97,9 +106,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        tempFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateChart(60, "temperature", mapColor.get("greenLeaf"), mapColor.get("brown"));
+            }
+        });
+        humiFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateChart(60, "humidity", mapColor.get("blue"), mapColor.get("brown"));
+            }
+        });
+        luxFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateChart(60, "lux", mapColor.get("yellow"), mapColor.get("brown"));
+            }
+        });
 
 
-        updateChart(10);
         updateData();
 
     }
@@ -155,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
         dataset.setCubicIntensity(0.2f);
     }
 
-    private void updateChart(float maxDataPoint) {
+    private void updateChart(float maxDataPoint, String dataType, String lineColor, String textColor) {
 
         sensor1DataRef.limitToLast((int)maxDataPoint).addValueEventListener(new ValueEventListener() {
             @Override
@@ -164,18 +190,18 @@ public class MainActivity extends AppCompatActivity {
                 final List<Long> xLabels = new ArrayList<>(); // This will store the timestamps
                 int count = 0;
                 for(DataSnapshot ds : snapshot.getChildren()){
-                    Float temp = ds.child("temperature").getValue(Float.class);
+                    Float value = ds.child(dataType).getValue(Float.class);
                     Long timestamp = ds.child("timeStamp").getValue(Long.class); // Directly retrieve the timestamp as Long
-                    if(temp != null && timestamp != null){
-                        yData.add(new Entry(count, temp));
+                    if(value != null && timestamp != null){
+                        yData.add(new Entry(count, value));
 
                         xLabels.add(timestamp); // Store the timestamp
                         count++;
                     }
                 }
 
-                final LineDataSet lineDataSet = new LineDataSet(yData, "Temp");
-                configureDataSet(lineDataSet, mapColor.get("blue"), mapColor.get("brown"));
+                final LineDataSet lineDataSet = new LineDataSet(yData, dataType);
+                configureDataSet(lineDataSet, lineColor, textColor);
                 LineData data = new LineData(lineDataSet);
                 data.setDrawValues(false);
                 lineChart.setData(data);
