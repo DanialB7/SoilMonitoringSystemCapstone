@@ -17,23 +17,24 @@
         android:numbersBackgroundColor="@null"
         android:numbersSelectorColor="@color/green_leaf" />
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/editTextDuration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:inputType="number"
+        android:hint="Duration in minutes"
+        android:layout_above="@+id/editTextReadingInterval"
+        android:imeOptions="actionDone"/>
+    <EditText
+        android:id="@+id/editTextReadingInterval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:imeOptions="actionDone"
         android:layout_above="@+id/waterToggleButton"
-        android:padding="16dp">
+        android:hint="Set reading interval"/>
 
-        <EditText
-            android:id="@+id/editTextReadingInterval"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="number"
-            android:imeOptions="actionDone"
-            android:hint="Set reading interval"/>
-
-    </LinearLayout>
     <ToggleButton
         android:id="@+id/waterToggleButton"
         android:layout_width="match_parent"
