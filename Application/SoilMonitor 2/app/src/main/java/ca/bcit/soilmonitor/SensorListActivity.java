@@ -43,6 +43,8 @@ public class SensorListActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 sensorNames.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    long timestamp = snapshot.child("timestamp").getValue(Long.class); // Replace "timestamp" if your key is different
+                    String readableDate = convertEpochToReadableDate(timestamp);
                     String sensorName = snapshot.getKey();
                     sensorNames.add(sensorName);
                 }
@@ -53,6 +55,8 @@ public class SensorListActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
             }
         });
+
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -65,5 +69,15 @@ public class SensorListActivity extends AppCompatActivity {
         });
 
     }
+<<<<<<< Updated upstream
 
+=======
+    private String convertEpochToReadableDate(long epochTime) {
+        // Assuming epochTime is in milliseconds
+        Date date = new Date(epochTime);
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault());
+        format.setTimeZone(TimeZone.getDefault());
+        return format.format(date);
+    }
+>>>>>>> Stashed changes
 }
