@@ -136,8 +136,7 @@ public class MainActivity extends AppCompatActivity {
         dataset.setMode(LineDataSet.Mode.CUBIC_BEZIER);
         dataset.setCubicIntensity(0.2f);
     }
-
-<<<<<<< HEAD
+    
     private void updateChart() {
         sensor1Ref.limitToLast(10).addValueEventListener(new ValueEventListener() {
             @Override
@@ -193,11 +192,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-=======
-
->>>>>>> ce3fcce7cc9e5e4caf5dc7e3b23c29b433cc6447
-
-
 
     private void updateData() {
         sensor1Ref.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
