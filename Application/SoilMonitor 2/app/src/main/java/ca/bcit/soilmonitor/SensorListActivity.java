@@ -69,9 +69,7 @@ public class SensorListActivity extends AppCompatActivity {
         });
 
     }
-<<<<<<< Updated upstream
 
-=======
     private String convertEpochToReadableDate(long epochTime) {
         // Assuming epochTime is in milliseconds
         Date date = new Date(epochTime);
@@ -79,5 +77,5 @@ public class SensorListActivity extends AppCompatActivity {
         format.setTimeZone(TimeZone.getDefault());
         return format.format(date);
     }
->>>>>>> Stashed changes
+
 }
