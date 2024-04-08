@@ -39,6 +39,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -82,11 +83,9 @@ public class MainActivity extends AppCompatActivity {
         mapColor.put("brown", "#A07E63");
         mapColor.put("blue","#1ecbe1");
 
-
-
         updateChart();
         updateData();
-        //retrieveData();
+
     }
     
     private void configureMPChart() {
@@ -111,14 +110,14 @@ public class MainActivity extends AppCompatActivity {
         lineChart.getAxisRight().setDrawLabels(false);
         //mpLineChart.getAxisLeft().setDrawLabels(false);
         //set X axis label to the bottom inside
-        lineChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM_INSIDE);
+        lineChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);
         lineChart.getXAxis().setTextColor(Color.parseColor("#A07E63"));
         lineChart.getXAxis().setTextSize(15);
         lineChart.getLegend().setTextColor(Color.parseColor("#A07E63"));
-        xaxis.setGranularity(0.5f);
+        xaxis.setGranularity(1f);
         xaxis.setGranularityEnabled(true);
         lineChart.setVisibleXRange(10f,10f);
-
+        xaxis.setLabelRotationAngle(-45f);
 
     }
 
@@ -138,26 +137,51 @@ public class MainActivity extends AppCompatActivity {
         dataset.setCubicIntensity(0.2f);
     }
 
+<<<<<<< HEAD
     private void updateChart() {
         sensor1Ref.limitToLast(10).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 yData = new ArrayList<>();
+                final List<Long> xLabels = new ArrayList<>(); // This will store the timestamps
                 int count = 0;
                 for(DataSnapshot ds : snapshot.getChildren()){
-                    count++;
                     Float temp = ds.child("temperature").getValue(Float.class);
-                    if(temp != null){
+                    Long timestamp = ds.child("timeStamp").getValue(Long.class); // Directly retrieve the timestamp as Long
+                    if(temp != null && timestamp != null){
                         yData.add(new Entry(count, temp));
+                        if (xLabels.size() >= 20) {
+                            xLabels.remove(0); // Remove the oldest element
+                        }
+                        xLabels.add(timestamp); // Store the timestamp
+                        count++;
                     }
-
                 }
 
-                final LineDataSet lineDataSet = new LineDataSet(yData,"Temp");
+                final LineDataSet lineDataSet = new LineDataSet(yData, "Temp");
                 configureDataSet(lineDataSet, mapColor.get("blue"), mapColor.get("brown"));
                 LineData data = new LineData(lineDataSet);
                 data.setDrawValues(false);
                 lineChart.setData(data);
+
+                // Apply a custom ValueFormatter that formats the timestamp into HH:mm:ss
+                lineChart.getXAxis().setValueFormatter(new ValueFormatter() {
+                    private final SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss", Locale.getDefault());
+
+                    @Override
+                    public String getFormattedValue(float value) {
+                        int index = (int) value;
+                        if (index >= 0 && index < xLabels.size()) {
+                            // Convert the timestamp to a Date object
+                            Date date = new Date(xLabels.get(index));
+                            // Return the formatted date string
+                            return format.format(date);
+                        } else {
+                            return "";
+                        }
+                    }
+                });
+
                 lineChart.notifyDataSetChanged();
                 lineChart.invalidate();
                 configureMPChart();
@@ -169,24 +193,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+=======
+
+>>>>>>> ce3fcce7cc9e5e4caf5dc7e3b23c29b433cc6447
 
 
-    private void configureDataset(LineDataSet data, String lineColour, String textColour) {
 
-        //set color of the data line
-        data.setColor(Color.parseColor(lineColour));
-        //enable color filled
-        data.setDrawFilled(true);
-        //set color filled
-        data.setFillColor(Color.parseColor(lineColour));
-        //set color of circle
-        data.setCircleColor(Color.parseColor(lineColour));
-        //set color of value
-        data.setValueTextColor(Color.parseColor(textColour));
-        data.setValueTextSize(12);
-        data.setMode(LineDataSet.Mode.CUBIC_BEZIER);
-
-    }
     private void updateData() {
         sensor1Ref.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
             @Override
@@ -243,18 +255,5 @@ public class MainActivity extends AppCompatActivity {
         return formattedDateTime;
     }
 
-
-
-    /*private void showChart(ArrayList<Entry> dataVals, String label) {
-        mpLineChart.refreshDrawableState();
-        lineDataSet = new LineDataSet(dataVals,label);
-        iLineDataSets = new ArrayList<>();
-        iLineDataSets.add(lineDataSet);
-        lineData = new LineData(iLineDataSets);
-        mpLineChart.notifyDataSetChanged();
-        mpLineChart.setData(lineData);
-        mpLineChart.invalidate();
-        configureDataset(lineDataSet, mapColor.get("greenLeaf"), mapColor.get("brown"));
-    }*/
 
 }

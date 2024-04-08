@@ -37,7 +37,7 @@ public class SensorDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sensor_detail);
 
         sensorName = getIntent().getStringExtra("SENSOR_NAME");
-        sensorDataRef = FirebaseDatabase.getInstance().getReference(sensorName + "/Data").orderByKey().limitToLast(25);
+        sensorDataRef = FirebaseDatabase.getInstance().getReference(sensorName + "/Data").orderByKey().limitToLast(10);
         sensorControlRef = FirebaseDatabase.getInstance().getReference(sensorName + "/Control");
 
         dataList = findViewById(R.id.detailsListView);
