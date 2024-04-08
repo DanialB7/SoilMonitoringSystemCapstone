@@ -3,6 +3,7 @@ package ca.bcit.soilmonitor;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -52,9 +53,13 @@ public class MainActivity extends AppCompatActivity {
     TextView luxRead;
     TextView timeStamp;
     FirebaseDatabase database;
-    DatabaseReference sensor1Ref;
+    DatabaseReference sensor1DataRef;
+    DatabaseReference sensor1ControlRef;
     ArrayList<Entry> yData;
-
+    CardView tempFilter;
+    CardView humiFilter;
+    CardView luxFilter;
+    CardView soilFilter;
 
 
     @Override
@@ -66,9 +71,13 @@ public class MainActivity extends AppCompatActivity {
         luxRead = findViewById(R.id.textViewLux);
         timeStamp = findViewById(R.id.textViewTimeStamp);
         database = FirebaseDatabase.getInstance();
-        sensor1Ref = database.getReference("Sensor 1/Data");
+        sensor1DataRef = database.getReference("Sensor 1/Data");
+        sensor1ControlRef = database.getReference("Sensor 1/Control");
         lineChart = findViewById(R.id.graph);
-
+        tempFilter = findViewById(R.id.cardViewTempFilter);
+        humiFilter = findViewById(R.id.cardViewHumiFilter);
+        luxFilter = findViewById(R.id.cardViewLuxFilter);
+        soilFilter = findViewById(R.id.cardViewSoilFilter);
         Button seeAllDevicesBtn = findViewById(R.id.seeAllDevicesBtn);
 
         seeAllDevicesBtn.setOnClickListener(new View.OnClickListener() {
@@ -82,13 +91,46 @@ public class MainActivity extends AppCompatActivity {
         mapColor.put("greenLeaf", "#7FB241");
         mapColor.put("brown", "#A07E63");
         mapColor.put("blue","#1ecbe1");
+        mapColor.put("yellow","#D2E249");
 
-        updateChart();
+
+        sensor1ControlRef.child("Schedule").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Integer duration = snapshot.child("duration").getValue(Integer.class);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        tempFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateChart(60, "temperature", mapColor.get("greenLeaf"), mapColor.get("brown"));
+            }
+        });
+        humiFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateChart(60, "humidity", mapColor.get("blue"), mapColor.get("brown"));
+            }
+        });
+        luxFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateChart(60, "lux", mapColor.get("yellow"), mapColor.get("brown"));
+            }
+        });
+
+
         updateData();
 
     }
     
-    private void configureMPChart() {
+    private void configureMPChart(float maxVisibleRange) {
         YAxis yaxis = lineChart.getAxisLeft();
         XAxis xaxis = lineChart.getXAxis();
         //no description text
@@ -116,9 +158,10 @@ public class MainActivity extends AppCompatActivity {
         lineChart.getLegend().setTextColor(Color.parseColor("#A07E63"));
         xaxis.setGranularity(1f);
         xaxis.setGranularityEnabled(true);
-        lineChart.setVisibleXRange(10f,10f);
+        lineChart.setVisibleXRange(10f,maxVisibleRange);
         xaxis.setLabelRotationAngle(-45f);
-
+        xaxis.setLabelCount(10);
+        yaxis.setLabelCount(6);
     }
 
     private void configureDataSet (LineDataSet dataset, String lineColour, String textColour) {
@@ -130,35 +173,35 @@ public class MainActivity extends AppCompatActivity {
         dataset.setFillColor(Color.parseColor(lineColour));
         //set color of circle
         dataset.setCircleColor(Color.parseColor(lineColour));
+        dataset.setDrawCircles(false);
         //set color of value
         dataset.setValueTextColor(Color.parseColor(textColour));
         dataset.setValueTextSize(12);
         dataset.setMode(LineDataSet.Mode.CUBIC_BEZIER);
         dataset.setCubicIntensity(0.2f);
     }
-    
-    private void updateChart() {
-        sensor1Ref.limitToLast(10).addValueEventListener(new ValueEventListener() {
+
+    private void updateChart(float maxDataPoint, String dataType, String lineColor, String textColor) {
+
+        sensor1DataRef.limitToLast((int)maxDataPoint).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 yData = new ArrayList<>();
                 final List<Long> xLabels = new ArrayList<>(); // This will store the timestamps
                 int count = 0;
                 for(DataSnapshot ds : snapshot.getChildren()){
-                    Float temp = ds.child("temperature").getValue(Float.class);
+                    Float value = ds.child(dataType).getValue(Float.class);
                     Long timestamp = ds.child("timeStamp").getValue(Long.class); // Directly retrieve the timestamp as Long
-                    if(temp != null && timestamp != null){
-                        yData.add(new Entry(count, temp));
-                        if (xLabels.size() >= 20) {
-                            xLabels.remove(0); // Remove the oldest element
-                        }
+                    if(value != null && timestamp != null){
+                        yData.add(new Entry(count, value));
+
                         xLabels.add(timestamp); // Store the timestamp
                         count++;
                     }
                 }
 
-                final LineDataSet lineDataSet = new LineDataSet(yData, "Temp");
-                configureDataSet(lineDataSet, mapColor.get("blue"), mapColor.get("brown"));
+                final LineDataSet lineDataSet = new LineDataSet(yData, dataType);
+                configureDataSet(lineDataSet, lineColor, textColor);
                 LineData data = new LineData(lineDataSet);
                 data.setDrawValues(false);
                 lineChart.setData(data);
@@ -183,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
 
                 lineChart.notifyDataSetChanged();
                 lineChart.invalidate();
-                configureMPChart();
+                configureMPChart(maxDataPoint);
             }
 
             @Override
@@ -194,11 +237,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateData() {
-        sensor1Ref.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
+        sensor1DataRef.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 String timeKey = snapshot.getKey();
-                sensor1Ref.addValueEventListener(new ValueEventListener() {
+                sensor1DataRef.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         Long epochTime = snapshot.child(timeKey+"/timeStamp").getValue(Long.class);

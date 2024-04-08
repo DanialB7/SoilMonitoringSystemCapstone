@@ -82,6 +82,7 @@
                 android:layout_gravity="center"
                 >
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewTempFilter"
                     android:layout_marginLeft="30dp"
                     app:cardBackgroundColor="@color/green_light"
                     android:layout_width="70dp"
@@ -96,6 +97,7 @@
                         android:layout_gravity="center"/>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHumiFilter"
                     android:layout_marginLeft="20dp"
                     app:cardBackgroundColor="@color/green_light"
                     android:layout_width="70dp"
@@ -110,6 +112,7 @@
                         android:layout_gravity="center"/>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewLuxFilter"
                     android:layout_marginLeft="20dp"
                     app:cardBackgroundColor="@color/green_light"
                     android:layout_width="70dp"
@@ -124,6 +127,7 @@
                         android:layout_gravity="center"/>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewSoilFilter"
                     android:layout_marginLeft="20dp"
                     app:cardBackgroundColor="@color/green_light"
                     android:layout_width="70dp"
