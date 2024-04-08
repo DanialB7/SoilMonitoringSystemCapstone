@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
     TextView luxRead;
     TextView timeStamp;
     FirebaseDatabase database;
-    DatabaseReference sensor1Ref;
+    DatabaseReference sensor1DataRef;
+    DatabaseReference sensor1ControlRef;
     ArrayList<Entry> yData;
 
 
@@ -66,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
         luxRead = findViewById(R.id.textViewLux);
         timeStamp = findViewById(R.id.textViewTimeStamp);
         database = FirebaseDatabase.getInstance();
-        sensor1Ref = database.getReference("Sensor 1/Data");
+        sensor1DataRef = database.getReference("Sensor 1/Data");
+        sensor1ControlRef = database.getReference("Sensor 1/Control");
         lineChart = findViewById(R.id.graph);
 
         Button seeAllDevicesBtn = findViewById(R.id.seeAllDevicesBtn);
@@ -83,12 +85,26 @@ public class MainActivity extends AppCompatActivity {
         mapColor.put("brown", "#A07E63");
         mapColor.put("blue","#1ecbe1");
 
-        updateChart();
+        sensor1ControlRef.child("Schedule").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Integer duration = snapshot.child("duration").getValue(Integer.class);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+
+        updateChart(10);
         updateData();
 
     }
     
-    private void configureMPChart() {
+    private void configureMPChart(float maxVisibleRange) {
         YAxis yaxis = lineChart.getAxisLeft();
         XAxis xaxis = lineChart.getXAxis();
         //no description text
@@ -116,9 +132,10 @@ public class MainActivity extends AppCompatActivity {
         lineChart.getLegend().setTextColor(Color.parseColor("#A07E63"));
         xaxis.setGranularity(1f);
         xaxis.setGranularityEnabled(true);
-        lineChart.setVisibleXRange(10f,10f);
+        lineChart.setVisibleXRange(10f,maxVisibleRange);
         xaxis.setLabelRotationAngle(-45f);
-
+        xaxis.setLabelCount(10);
+        yaxis.setLabelCount(6);
     }
 
     private void configureDataSet (LineDataSet dataset, String lineColour, String textColour) {
@@ -130,15 +147,17 @@ public class MainActivity extends AppCompatActivity {
         dataset.setFillColor(Color.parseColor(lineColour));
         //set color of circle
         dataset.setCircleColor(Color.parseColor(lineColour));
+        dataset.setDrawCircles(false);
         //set color of value
         dataset.setValueTextColor(Color.parseColor(textColour));
         dataset.setValueTextSize(12);
         dataset.setMode(LineDataSet.Mode.CUBIC_BEZIER);
         dataset.setCubicIntensity(0.2f);
     }
-    
-    private void updateChart() {
-        sensor1Ref.limitToLast(10).addValueEventListener(new ValueEventListener() {
+
+    private void updateChart(float maxDataPoint) {
+
+        sensor1DataRef.limitToLast((int)maxDataPoint).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 yData = new ArrayList<>();
@@ -149,9 +168,7 @@ public class MainActivity extends AppCompatActivity {
                     Long timestamp = ds.child("timeStamp").getValue(Long.class); // Directly retrieve the timestamp as Long
                     if(temp != null && timestamp != null){
                         yData.add(new Entry(count, temp));
-                        if (xLabels.size() >= 20) {
-                            xLabels.remove(0); // Remove the oldest element
-                        }
+
                         xLabels.add(timestamp); // Store the timestamp
                         count++;
                     }
@@ -183,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
 
                 lineChart.notifyDataSetChanged();
                 lineChart.invalidate();
-                configureMPChart();
+                configureMPChart(maxDataPoint);
             }
 
             @Override
@@ -194,11 +211,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateData() {
-        sensor1Ref.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
+        sensor1DataRef.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 String timeKey = snapshot.getKey();
-                sensor1Ref.addValueEventListener(new ValueEventListener() {
+                sensor1DataRef.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         Long epochTime = snapshot.child(timeKey+"/timeStamp").getValue(Long.class);
