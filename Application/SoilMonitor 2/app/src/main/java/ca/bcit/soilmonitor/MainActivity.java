@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
@@ -42,34 +43,31 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    LineChart mpLineChart;
-    LineDataSet lineDataSet = new LineDataSet(null,null);
+    LineChart lineChart;
 
-    ArrayList<ILineDataSet> iLineDataSets = new ArrayList<>();
-    LineData lineData;
     HashMap<String, String> mapColor = new HashMap<>();
     TextView tempRead;
     TextView humidRead;
     TextView luxRead;
     TextView timeStamp;
     FirebaseDatabase database;
-    DatabaseReference myRef;
-    ArrayList<Entry> dataTemp = new ArrayList<Entry>();
-    TextView test1;
-    TextView test2;
+    DatabaseReference sensor1Ref;
+    ArrayList<Entry> yData;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        test1 = findViewById(R.id.testing1);
-        test2 = findViewById(R.id.testing2);
         tempRead = findViewById(R.id.textViewTemp);
         humidRead = findViewById(R.id.textViewHumid);
         luxRead = findViewById(R.id.textViewLux);
         timeStamp = findViewById(R.id.textViewTimeStamp);
         database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("Sensor 1/Data");
+        sensor1Ref = database.getReference("Sensor 1/Data");
+        lineChart = findViewById(R.id.graph);
+
         Button seeAllDevicesBtn = findViewById(R.id.seeAllDevicesBtn);
 
         seeAllDevicesBtn.setOnClickListener(new View.OnClickListener() {
@@ -84,49 +82,94 @@ public class MainActivity extends AppCompatActivity {
         mapColor.put("brown", "#A07E63");
         mapColor.put("blue","#1ecbe1");
 
-        mpLineChart = findViewById(R.id.graph);
 
-        //LineDataSet lineDataSet2 = new LineDataSet(dataValues2(), "Humidity");
-        //ArrayList<ILineDataSet> dataSets = new ArrayList<>();
-        //dataSets.add(lineDataSet2);
-        //ineData data = new LineData(dataSets);
-        //mpLineChart.setData(data);
-        //mpLineChart.invalidate();
-        //configureMPChart();
-        //configureDataset(lineDataSet2, mapColor.get("blue"), mapColor.get("brown"));
 
+        updateChart();
         updateData();
         //retrieveData();
     }
     
     private void configureMPChart() {
-        LineData data = new LineData();
+        YAxis yaxis = lineChart.getAxisLeft();
+        XAxis xaxis = lineChart.getXAxis();
         //no description text
-        mpLineChart.getDescription().setEnabled(false);
+        lineChart.getDescription().setEnabled(false);
         //enable touch gesture
-        mpLineChart.setTouchEnabled(true);
+        lineChart.setTouchEnabled(true);
         //enable scaling and dragging
-        mpLineChart.setDragEnabled(true);
-        mpLineChart.setScaleEnabled(true);
+        lineChart.setDragEnabled(true);
+        lineChart.setScaleEnabled(true);
         //remove gridline
-        mpLineChart.getAxisRight().setDrawGridLines(false);
-        mpLineChart.getAxisLeft().setDrawGridLines(false);
-        mpLineChart.getXAxis().setDrawGridLines(false);
+        lineChart.getAxisRight().setDrawGridLines(false);
+        lineChart.getAxisLeft().setDrawGridLines(false);
+        lineChart.getXAxis().setDrawGridLines(false);
         //remove outer line
-        mpLineChart.getAxisRight().setDrawAxisLine(false);
-        mpLineChart.getAxisLeft().setDrawAxisLine(false);
-        mpLineChart.getXAxis().setDrawAxisLine(false);
+        lineChart.getAxisRight().setDrawAxisLine(false);
+        lineChart.getAxisLeft().setDrawAxisLine(false);
+        lineChart.getXAxis().setDrawAxisLine(false);
         //remove axis labels
-        mpLineChart.getAxisRight().setDrawLabels(false);
+        lineChart.getAxisRight().setDrawLabels(false);
         //mpLineChart.getAxisLeft().setDrawLabels(false);
         //set X axis label to the bottom inside
-        mpLineChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM_INSIDE);
-        mpLineChart.getXAxis().setTextColor(Color.parseColor("#A07E63"));
-        mpLineChart.getXAxis().setTextSize(15);
-        mpLineChart.getLegend().setTextColor(Color.parseColor("#A07E63"));
+        lineChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM_INSIDE);
+        lineChart.getXAxis().setTextColor(Color.parseColor("#A07E63"));
+        lineChart.getXAxis().setTextSize(15);
+        lineChart.getLegend().setTextColor(Color.parseColor("#A07E63"));
+        xaxis.setGranularity(0.5f);
+        xaxis.setGranularityEnabled(true);
+        lineChart.setVisibleXRange(10f,10f);
 
-        mpLineChart.setData(data);
+
     }
+
+    private void configureDataSet (LineDataSet dataset, String lineColour, String textColour) {
+        //set color of the data line
+        dataset.setColor(Color.parseColor(lineColour));
+        //enable color filled
+        dataset.setDrawFilled(true);
+        //set color filled
+        dataset.setFillColor(Color.parseColor(lineColour));
+        //set color of circle
+        dataset.setCircleColor(Color.parseColor(lineColour));
+        //set color of value
+        dataset.setValueTextColor(Color.parseColor(textColour));
+        dataset.setValueTextSize(12);
+        dataset.setMode(LineDataSet.Mode.CUBIC_BEZIER);
+        dataset.setCubicIntensity(0.2f);
+    }
+
+    private void updateChart() {
+        sensor1Ref.limitToLast(10).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                yData = new ArrayList<>();
+                int count = 0;
+                for(DataSnapshot ds : snapshot.getChildren()){
+                    count++;
+                    Float temp = ds.child("temperature").getValue(Float.class);
+                    if(temp != null){
+                        yData.add(new Entry(count, temp));
+                    }
+
+                }
+
+                final LineDataSet lineDataSet = new LineDataSet(yData,"Temp");
+                configureDataSet(lineDataSet, mapColor.get("blue"), mapColor.get("brown"));
+                LineData data = new LineData(lineDataSet);
+                data.setDrawValues(false);
+                lineChart.setData(data);
+                lineChart.notifyDataSetChanged();
+                lineChart.invalidate();
+                configureMPChart();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
 
     private void configureDataset(LineDataSet data, String lineColour, String textColour) {
 
@@ -145,11 +188,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void updateData() {
-        myRef.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
+        sensor1Ref.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 String timeKey = snapshot.getKey();
-                myRef.addValueEventListener(new ValueEventListener() {
+                sensor1Ref.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         Long epochTime = snapshot.child(timeKey+"/timeStamp").getValue(Long.class);
@@ -202,7 +245,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private void showChart(ArrayList<Entry> dataVals, String label) {
+    /*private void showChart(ArrayList<Entry> dataVals, String label) {
         mpLineChart.refreshDrawableState();
         lineDataSet = new LineDataSet(dataVals,label);
         iLineDataSets = new ArrayList<>();
@@ -212,6 +255,6 @@ public class MainActivity extends AppCompatActivity {
         mpLineChart.setData(lineData);
         mpLineChart.invalidate();
         configureDataset(lineDataSet, mapColor.get("greenLeaf"), mapColor.get("brown"));
-    }
+    }*/
 
 }
