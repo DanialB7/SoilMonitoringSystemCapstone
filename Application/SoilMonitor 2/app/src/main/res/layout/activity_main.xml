@@ -310,16 +310,6 @@
                 app:backgroundTint="@null"
                 android:textColor="@color/green_leaf" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/testing1"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/testing2"/>
-
         </LinearLayout>
 
 
