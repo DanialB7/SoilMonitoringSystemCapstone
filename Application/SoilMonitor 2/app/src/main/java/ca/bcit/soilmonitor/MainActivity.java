@@ -138,37 +138,7 @@ public class MainActivity extends AppCompatActivity {
         dataset.setCubicIntensity(0.2f);
     }
 
-    private void updateChart() {
-        sensor1Ref.limitToLast(10).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                yData = new ArrayList<>();
-                int count = 0;
-                for(DataSnapshot ds : snapshot.getChildren()){
-                    count++;
-                    Float temp = ds.child("temperature").getValue(Float.class);
-                    if(temp != null){
-                        yData.add(new Entry(count, temp));
-                    }
 
-                }
-
-                final LineDataSet lineDataSet = new LineDataSet(yData,"Temp");
-                configureDataSet(lineDataSet, mapColor.get("blue"), mapColor.get("brown"));
-                LineData data = new LineData(lineDataSet);
-                data.setDrawValues(false);
-                lineChart.setData(data);
-                lineChart.notifyDataSetChanged();
-                lineChart.invalidate();
-                configureMPChart();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-    }
 
 
     private void configureDataset(LineDataSet data, String lineColour, String textColour) {
