@@ -14,8 +14,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
+import java.util.TimeZone;
 
 import android.widget.Button;
 import androidx.annotation.NonNull;
@@ -64,11 +68,12 @@ public class SensorDetailActivity extends AppCompatActivity {
                 sensorDataList.clear();
                 ArrayList<String> reversedList = new ArrayList<>();
                 for (DataSnapshot timestampSnapshot : dataSnapshot.getChildren()) {
-                    String timestamp = timestampSnapshot.getKey();
+                    String epochTimestamp = timestampSnapshot.getKey();
+                    String readableDate = convertEpochToReadableDate(epochTimestamp);
                     String humidity = String.valueOf(timestampSnapshot.child("humidity").getValue());
                     String temperature = String.valueOf(timestampSnapshot.child("temperature").getValue());
                     String lux = String.valueOf(timestampSnapshot.child("lux").getValue());
-                    String formattedData = String.format("Timestamp: %s\nTemperature: %s°C\nHumidity: %s%%\nLux: %s", timestamp, temperature, humidity, lux);
+                    String formattedData = String.format("Timestamp: %s\nTemperature: %s°C\nHumidity: %s%%\nLux: %s", readableDate, temperature, humidity, lux);
 
                     // Add the formatted string to the start of the reversed list
                     reversedList.add(0, formattedData);
@@ -86,6 +91,17 @@ public class SensorDetailActivity extends AppCompatActivity {
                 // Handle error
             }
         });
+    }
+    private String convertEpochToReadableDate(String epochTime) {
+        if (epochTime != null && !epochTime.isEmpty()) {
+            long timestampInMillis = Long.parseLong(epochTime)*1000;
+            Date date = new Date(timestampInMillis);
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault());
+            sdf.setTimeZone(TimeZone.getDefault());
+            return sdf.format(date);
+        } else {
+            return "Unknown Date";
+        }
     }
 
 
