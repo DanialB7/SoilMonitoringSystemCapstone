@@ -220,11 +220,20 @@ public class MainActivity extends AppCompatActivity {
         dataset.setMode(LineDataSet.Mode.CUBIC_BEZIER);
         dataset.setCubicIntensity(0.2f);
     }
+    // Member variables for listeners
+    private ValueEventListener currentChartListener;
+    private Query currentChartDataRef;
+
 
     private void updateChart(float maxDataPoint, String dataType, String lineColor, String textColor, int sensorIndex) {
 
         String sensorName = "Sensor " + (sensorIndex + 1);
-        sensorDataRef.get(sensorIndex).limitToLast((int)maxDataPoint).addValueEventListener(new ValueEventListener() {
+        if (currentChartListener != null && currentChartDataRef != null) {
+            currentChartDataRef.removeEventListener(currentChartListener);
+        }
+
+        currentChartDataRef = sensorDataRef.get(sensorIndex).limitToLast((int)maxDataPoint);
+        currentChartListener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 yData = new ArrayList<>();
@@ -273,7 +282,8 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        });
+        };
+        currentChartDataRef.addValueEventListener(currentChartListener);
     }
 
     private void updateData(TextView tempRead, TextView humidRead, TextView luxRead, TextView timeStamp, DatabaseReference sensorDataRef) {
