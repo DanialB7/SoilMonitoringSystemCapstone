@@ -392,7 +392,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "SoilMonitor.kicad_pro",
+    "filename": "Esp32.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -469,7 +469,7 @@
   },
   "sheets": [
     [
-      "5cbd104c-4c6a-43d0-a015-acac48ccdf07",
+      "00f1afbd-cecf-43e2-ab06-94d5f4035e5d",
       ""
     ]
   ],
