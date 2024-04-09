@@ -184,25 +184,25 @@
                             android:fontFamily="sans-serif-medium"
                             />
                         <TextView
-                            android:id="@+id/textViewTemp"
+                            android:id="@+id/textViewTemp_Sensor1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="temp: 20C"
                             android:textColor="@color/white"/>
                         <TextView
-                            android:id="@+id/textViewHumid"
+                            android:id="@+id/textViewHumid_Sensor1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="humid: 50%"
                             android:textColor="@color/white"/>
                         <TextView
-                            android:id="@+id/textViewLux"
+                            android:id="@+id/textViewLux_Sensor1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="lux: 100"
                             android:textColor="@color/white"/>
                         <TextView
-                            android:id="@+id/textViewTimeStamp"
+                            android:id="@+id/textViewTimeStamp_Sensor1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
@@ -216,53 +216,10 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView_device2"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignRight="@id/cardView_device1"
                     android:layout_marginLeft="20dp"
-                    app:cardElevation="5dp"
                     app:cardBackgroundColor="@color/green_light"
-
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Sensor 2"
-
-                            android:textColor="@color/white"
-                            android:textSize="20dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="temp: 23C"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="humid: 60%"
-                            android:textColor="@color/white" />
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView_device3"
-                    android:layout_width="150dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignRight="@id/cardView_device1"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    app:cardBackgroundColor="@color/green_light"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
@@ -275,26 +232,42 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Sensor 3"
-
+                            android:text="Sensor 2"
+                            android:textSize="20dp"
                             android:textColor="@color/white"
-                            android:textSize="20dp" />
-
+                            android:fontFamily="sans-serif-medium"
+                            />
                         <TextView
+                            android:id="@+id/textViewTemp_Sensor2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="temp: 25C"
-                            android:textColor="@color/white" />
-
+                            android:text="temp: 20C"
+                            android:textColor="@color/white"/>
                         <TextView
+                            android:id="@+id/textViewHumid_Sensor2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="humid: 70%"
-                            android:textColor="@color/white" />
+                            android:text="humid: 50%"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:id="@+id/textViewLux_Sensor2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="lux: 100"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:id="@+id/textViewTimeStamp_Sensor2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="time"
+                            android:textStyle="italic"
+                            android:textSize="10dp"/>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
+
 
             </LinearLayout>
 
@@ -314,12 +287,19 @@
                 app:backgroundTint="@null"
                 android:textColor="@color/green_leaf" />
 
-        </LinearLayout>
 
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/recyclerViewSensors"/>
 
 
 
     </LinearLayout>
+
+
 
 
 </ScrollView>

@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -16,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
@@ -48,36 +51,53 @@ public class MainActivity extends AppCompatActivity {
     LineChart lineChart;
 
     HashMap<String, String> mapColor = new HashMap<>();
-    TextView tempRead;
-    TextView humidRead;
-    TextView luxRead;
-    TextView timeStamp;
+    TextView tempRead_Sensor1, tempRead_Sensor2;
+    TextView humidRead_Sensor1, humidRead_Sensor2;
+    TextView luxRead_Sensor1, luxRead_Sensor2;
+    TextView timeStamp_Sensor1, timeStamp_Sensor2;
     FirebaseDatabase database;
     DatabaseReference sensor1DataRef;
+    DatabaseReference sensor2DataRef;
+    ArrayList<DatabaseReference> sensorDataRef;
+    int currentSensor;
     DatabaseReference sensor1ControlRef;
     ArrayList<Entry> yData;
     CardView tempFilter;
     CardView humiFilter;
     CardView luxFilter;
     CardView soilFilter;
+    CardView device1Button;
+    CardView device2Button;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tempRead = findViewById(R.id.textViewTemp);
-        humidRead = findViewById(R.id.textViewHumid);
-        luxRead = findViewById(R.id.textViewLux);
-        timeStamp = findViewById(R.id.textViewTimeStamp);
+        sensorDataRef = new ArrayList<>();
+        tempRead_Sensor1 = findViewById(R.id.textViewTemp_Sensor1);
+        humidRead_Sensor1 = findViewById(R.id.textViewHumid_Sensor1);
+        luxRead_Sensor1 = findViewById(R.id.textViewLux_Sensor1);
+        timeStamp_Sensor1 = findViewById(R.id.textViewTimeStamp_Sensor1);
+        tempRead_Sensor2 = findViewById(R.id.textViewTemp_Sensor2);
+        humidRead_Sensor2 = findViewById(R.id.textViewHumid_Sensor2);
+        luxRead_Sensor2 = findViewById(R.id.textViewLux_Sensor2);
+        timeStamp_Sensor2 = findViewById(R.id.textViewTimeStamp_Sensor2);
         database = FirebaseDatabase.getInstance();
+        sensorDataRef.add(database.getReference("Sensor 1/Data"));
+        sensorDataRef.add(database.getReference("Sensor 2/Data"));
+
         sensor1DataRef = database.getReference("Sensor 1/Data");
+        sensor2DataRef = database.getReference("Sensor 2/Data");
         sensor1ControlRef = database.getReference("Sensor 1/Control");
         lineChart = findViewById(R.id.graph);
         tempFilter = findViewById(R.id.cardViewTempFilter);
         humiFilter = findViewById(R.id.cardViewHumiFilter);
         luxFilter = findViewById(R.id.cardViewLuxFilter);
         soilFilter = findViewById(R.id.cardViewSoilFilter);
+        device1Button = findViewById(R.id.cardView_device1);
+        device2Button = findViewById(R.id.cardView_device2);
         Button seeAllDevicesBtn = findViewById(R.id.seeAllDevicesBtn);
 
         seeAllDevicesBtn.setOnClickListener(new View.OnClickListener() {
@@ -105,36 +125,56 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        device1Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentSensor = 0;
+            }
+        });
+        device2Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentSensor = 1;
+            }
+        });
 
         tempFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateChart(60, "temperature", mapColor.get("greenLeaf"), mapColor.get("brown"));
+                updateChart(60, "temperature", mapColor.get("greenLeaf"), mapColor.get("brown"), currentSensor);
             }
         });
         humiFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateChart(60, "humidity", mapColor.get("blue"), mapColor.get("brown"));
+                updateChart(60, "humidity", mapColor.get("blue"), mapColor.get("brown"), currentSensor);
             }
         });
         luxFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateChart(60, "lux", mapColor.get("yellow"), mapColor.get("brown"));
+                updateChart(60, "lux", mapColor.get("yellow"), mapColor.get("brown"), currentSensor);
             }
         });
 
 
-        updateData();
 
+
+        updateData(tempRead_Sensor1, humidRead_Sensor1, luxRead_Sensor1, timeStamp_Sensor1, sensor1DataRef);
+        updateData(tempRead_Sensor2, humidRead_Sensor2, luxRead_Sensor2, timeStamp_Sensor2, sensor2DataRef);
+        fillSensorList();
     }
-    
-    private void configureMPChart(float maxVisibleRange) {
+
+    private void fillSensorList() {
+        //SensorListRecycleView sensor1 = new SensorListRecycleView();
+    }
+
+    private void configureMPChart(float maxVisibleRange, String sensorName) {
         YAxis yaxis = lineChart.getAxisLeft();
         XAxis xaxis = lineChart.getXAxis();
         //no description text
-        lineChart.getDescription().setEnabled(false);
+        lineChart.getDescription().setEnabled(true);
+        lineChart.getDescription().setText(sensorName);
         //enable touch gesture
         lineChart.setTouchEnabled(true);
         //enable scaling and dragging
@@ -181,9 +221,10 @@ public class MainActivity extends AppCompatActivity {
         dataset.setCubicIntensity(0.2f);
     }
 
-    private void updateChart(float maxDataPoint, String dataType, String lineColor, String textColor) {
+    private void updateChart(float maxDataPoint, String dataType, String lineColor, String textColor, int sensorIndex) {
 
-        sensor1DataRef.limitToLast((int)maxDataPoint).addValueEventListener(new ValueEventListener() {
+        String sensorName = "Sensor " + (sensorIndex + 1);
+        sensorDataRef.get(sensorIndex).limitToLast((int)maxDataPoint).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 yData = new ArrayList<>();
@@ -194,7 +235,6 @@ public class MainActivity extends AppCompatActivity {
                     Long timestamp = ds.child("timeStamp").getValue(Long.class); // Directly retrieve the timestamp as Long
                     if(value != null && timestamp != null){
                         yData.add(new Entry(count, value));
-
                         xLabels.add(timestamp); // Store the timestamp
                         count++;
                     }
@@ -226,7 +266,7 @@ public class MainActivity extends AppCompatActivity {
 
                 lineChart.notifyDataSetChanged();
                 lineChart.invalidate();
-                configureMPChart(maxDataPoint);
+                configureMPChart(10, sensorName );
             }
 
             @Override
@@ -236,12 +276,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void updateData() {
-        sensor1DataRef.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
+    private void updateData(TextView tempRead, TextView humidRead, TextView luxRead, TextView timeStamp, DatabaseReference sensorDataRef) {
+        sensorDataRef.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 String timeKey = snapshot.getKey();
-                sensor1DataRef.addValueEventListener(new ValueEventListener() {
+                sensorDataRef.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         Long epochTime = snapshot.child(timeKey+"/timeStamp").getValue(Long.class);

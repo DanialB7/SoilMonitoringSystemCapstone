@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/green_light">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tvSensorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sensor #"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:id="@+id/tvTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="temp: ##C"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tvHumid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="humid: ##%"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tvLux"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lux: ####"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Last update: hh:mm:ss"
+                android:textStyle="italic"
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
