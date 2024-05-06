@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
     TextView humidRead_Sensor1, humidRead_Sensor2;
     TextView luxRead_Sensor1, luxRead_Sensor2;
     TextView timeStamp_Sensor1, timeStamp_Sensor2;
+    TextView batteryRead_Sensor1, batteryRead_Sensor2;
+    TextView soilMoistureRead_Sensor1, soilMoistureRead_Sensor2;
     FirebaseDatabase database;
     DatabaseReference sensor1DataRef;
     DatabaseReference sensor2DataRef;
@@ -79,11 +81,15 @@ public class MainActivity extends AppCompatActivity {
         tempRead_Sensor1 = findViewById(R.id.textViewTemp_Sensor1);
         humidRead_Sensor1 = findViewById(R.id.textViewHumid_Sensor1);
         luxRead_Sensor1 = findViewById(R.id.textViewLux_Sensor1);
+        batteryRead_Sensor1 = findViewById(R.id.textViewBattery_Sensor1);
+        soilMoistureRead_Sensor1 = findViewById(R.id.textViewSoil_Sensor1);
         timeStamp_Sensor1 = findViewById(R.id.textViewTimeStamp_Sensor1);
         tempRead_Sensor2 = findViewById(R.id.textViewTemp_Sensor2);
         humidRead_Sensor2 = findViewById(R.id.textViewHumid_Sensor2);
         luxRead_Sensor2 = findViewById(R.id.textViewLux_Sensor2);
         timeStamp_Sensor2 = findViewById(R.id.textViewTimeStamp_Sensor2);
+        batteryRead_Sensor2 = findViewById(R.id.textViewBattery_Sensor2);
+        soilMoistureRead_Sensor2 = findViewById(R.id.textViewSoil_Sensor2);
         database = FirebaseDatabase.getInstance();
         sensorDataRef.add(database.getReference("Sensor 1/Data"));
         sensorDataRef.add(database.getReference("Sensor 2/Data"));
@@ -141,27 +147,35 @@ public class MainActivity extends AppCompatActivity {
         tempFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateChart(60, "temperature", mapColor.get("greenLeaf"), mapColor.get("brown"), currentSensor);
+                updateChart(10, "temperature", mapColor.get("greenLeaf"), mapColor.get("brown"), currentSensor);
             }
         });
         humiFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateChart(60, "humidity", mapColor.get("blue"), mapColor.get("brown"), currentSensor);
+                updateChart(10, "humidity", mapColor.get("blue"), mapColor.get("brown"), currentSensor);
             }
         });
         luxFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateChart(60, "lux", mapColor.get("yellow"), mapColor.get("brown"), currentSensor);
+                updateChart(10, "lux", mapColor.get("yellow"), mapColor.get("brown"), currentSensor);
+            }
+        });
+
+        soilFilter.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                updateChart(10, "soilMoisture", mapColor.get("brown"), mapColor.get("brown"), currentSensor);
             }
         });
 
 
 
 
-        updateData(tempRead_Sensor1, humidRead_Sensor1, luxRead_Sensor1, timeStamp_Sensor1, sensor1DataRef);
-        updateData(tempRead_Sensor2, humidRead_Sensor2, luxRead_Sensor2, timeStamp_Sensor2, sensor2DataRef);
+        updateData(tempRead_Sensor1, humidRead_Sensor1, luxRead_Sensor1, timeStamp_Sensor1,soilMoistureRead_Sensor1,batteryRead_Sensor1,sensor1DataRef);
+        updateData(tempRead_Sensor2, humidRead_Sensor2, luxRead_Sensor2, timeStamp_Sensor2,soilMoistureRead_Sensor2,batteryRead_Sensor2, sensor2DataRef);
         fillSensorList();
     }
 
@@ -286,7 +300,7 @@ public class MainActivity extends AppCompatActivity {
         currentChartDataRef.addValueEventListener(currentChartListener);
     }
 
-    private void updateData(TextView tempRead, TextView humidRead, TextView luxRead, TextView timeStamp, DatabaseReference sensorDataRef) {
+    private void updateData(TextView tempRead, TextView humidRead, TextView luxRead, TextView timeStamp,TextView batteryRead, TextView soilMoistureRead, DatabaseReference sensorDataRef) {
         sensorDataRef.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
@@ -298,15 +312,21 @@ public class MainActivity extends AppCompatActivity {
                         Float temp = snapshot.child(timeKey+"/temperature").getValue(Float.class);
                         Double humid = snapshot.child(timeKey+"/humidity").getValue(Double.class);
                         Double lux = snapshot.child(timeKey+"/lux").getValue(Double.class);
-                        if(temp!= null & humid != null && lux != null & epochTime != null){
+                        Float soilmoisture = snapshot.child(timeKey+"/soilMoisture").getValue(Float.class);
+                        Float battery = snapshot.child(timeKey+"/battery").getValue(Float.class);
+                        if(temp!= null & humid != null && lux != null & epochTime != null & soilmoisture!= null & battery != null){
                             String tempFormat = "Temperature: " + String.format("%.1f", temp) + " C";
                             String humidFormat = "Humidity: " + String.format("%.1f", humid) + "%";
                             String luxFormat = "Lux: " + String.format("%.1f", lux);
+                            String soilmoistureFormat = "soil moisture: " + String.format("%.1f", soilmoisture) + "%";
+                            String batteryFormat = "battery: " + String.format("%.1f", battery) + "%";
                             String epochFormat = convertEpochToLocalDateTime(epochTime);
                             String localDateTime = "Last updated: " + epochFormat;
                             tempRead.setText(tempFormat);
                             humidRead.setText(humidFormat);
                             luxRead.setText(luxFormat);
+                            soilMoistureRead.setText(soilmoistureFormat);
+                            batteryRead.setText(batteryFormat);
                             timeStamp.setText(localDateTime);
                         }
                     }
